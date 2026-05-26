@@ -1,0 +1,20 @@
+PS C:\Users\mrsan\Desktop\FSD_BATCH> git log --oneline --graph --decorate
+*   724f000 (HEAD -> main) Resolved merge conflict
+|\  
+| * 9746e1b (GitWork) Modified hello.xml in GitWork
+* | 0ed478e (origin/main, origin/HEAD) Modified hello.xml in Main
+|/  
+* 09b7d71 Added hello.xml in Gitwork
+*   303650d Merge pull request #1 from saivardhan1245/GitNewBranch
+|\  
+| * b32ccc8 (origin/GitNewBranch) added files in new branch
+|/  
+* 9f2e154 add git folder
+* 9b96515 add git folder
+* 2dfc4cd add git folder
+* 9f4df1d welcome to cvr
+*   9089ea3 Merge branch 'main' of https://github.com/saivardhan1245/FSD_BATCH
+|\  
+| * 23cbc57 added welcome.txt
+* 742ab0a added gitdemo folder
+* 1e264cc first commit
