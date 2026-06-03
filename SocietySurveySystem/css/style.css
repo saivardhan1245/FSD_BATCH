@@ -12,7 +12,19 @@ animation:fadeIn 1s ease;
 }
 
 /* Header */
+body{
+background:
+linear-gradient(
+rgba(96,202,216,0.7),
+rgba(96,202,216,0.7)
+),
+url("../images/mobile.jpg");
 
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
 header{
 background:#f516b6;
 color:white;
@@ -126,10 +138,13 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3);
 /* Cards */
 
 .card{
-background:rgb(223,72,188);
+background:rgba(255,255,255,0.2);
 padding:20px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(237,60,47,0.959);
+border:1px solid rgba(255,255,255,0.3);
+backdrop-filter:blur(10px);
+-webkit-backdrop-filter:blur(10px);
+box-shadow:0 8px 32px rgba(0,0,0,0.2);
 transition:all 0.4s ease;
 }
 
@@ -173,9 +188,10 @@ transform:rotate(1deg) scale(1.03);
 /* Form */
 
 form{
+    background:rgba(255,255,255,0.2);
 max-width:700px;
 margin:auto;
-background:rgb(52,254,248);
+border:1px solid rgba(255,255,255,0.3);
 padding:20px;
 border-radius:10px;
 transition:all 0.4s ease;
@@ -192,7 +208,7 @@ textarea{
 width:100%;
 padding:10px;
 margin:10px 0;
-background:rgb(52,254,248);
+ background:rgba(255,255,255,0.2);
 transition:all 0.3s ease;
 }
 
@@ -226,7 +242,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3);
 table{
 width:100%;
 border-collapse:collapse;
-background:rgb(79,208,92);
+ background:rgba(255,255,255,0.2);
 transition:all 0.4s ease;
 }
 
