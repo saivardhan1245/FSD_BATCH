@@ -42,7 +42,7 @@ This project is a responsive college event management website that allows studen
 - `gallery.html` — Gallery page
 - `faq.html` — FAQ page
 - `contact.html` — Contact page
-- `style.css` — Shared custom styling
+- `css/style.css` — Shared custom styling
 
 ## Notes
 
