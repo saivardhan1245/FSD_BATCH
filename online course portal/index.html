@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Course Portal | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-logo">OCP</span> Training Institute
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5 pt-5">
+      <section class="hero-section text-white text-center d-flex align-items-center" id="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto">
+              <span class="badge bg-primary rounded-pill mb-3">Upskill for tomorrow</span>
+              <h1 class="display-5 fw-bold">FutureReady Training Institute</h1>
+              <p class="lead mb-4">Transforming learners into skilled professionals with industry-led online and classroom courses.</p>
+              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
+                <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#aboutModal">About Institute</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row g-4 text-center mb-5">
+          <div class="col-md-4">
+            <div class="feature-card p-4 h-100 shadow-sm">
+              <h5 class="mb-3">Project-based learning</h5>
+              <p class="mb-0 text-muted">Hands-on assignments and capstone projects designed for real-world applications.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card p-4 h-100 shadow-sm">
+              <h5 class="mb-3">Career support</h5>
+              <p class="mb-0 text-muted">Resume reviews, interview practice, and placement guidance to help you land a job.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card p-4 h-100 shadow-sm">
+              <h5 class="mb-3">Flexible learning</h5>
+              <p class="mb-0 text-muted">Learn at your own pace with live sessions, recorded videos, and mentor support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h2>Featured Courses</h2>
+            <p class="text-muted">Choose from our most popular certification-ready training paths.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/web-development.svg" class="card-img-top" alt="Web Development">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Build responsive websites using HTML, CSS, JavaScript and Bootstrap.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 12 weeks</li>
+                  <li><strong>Fee:</strong> ₹450</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/python-programming.svg" class="card-img-top" alt="Python Programming">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Python Programming</h5>
+                <p class="card-text">Learn Python syntax, scripting, data structures and automation.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 10 weeks</li>
+                  <li><strong>Fee:</strong> ₹400</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/data-science.svg" class="card-img-top" alt="Data Science">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Data Science</h5>
+                <p class="card-text">Master data analytics, visualization and model building for decision-making.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 14 weeks</li>
+                  <li><strong>Fee:</strong> ₹600</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/ai-ml.svg" class="card-img-top" alt="AI & Machine Learning">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">AI & Machine Learning</h5>
+                <p class="card-text">Explore algorithms, neural networks and practical AI applications.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 16 weeks</li>
+                  <li><strong>Fee:</strong> ₹700</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/java-programming.svg" class="card-img-top" alt="Java Programming">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Java Programming</h5>
+                <p class="card-text">Develop object-oriented applications and backend services.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 12 weeks</li>
+                  <li><strong>Fee:</strong> ₹500</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="images/cloud-computing.svg" class="card-img-top" alt="Cloud Computing">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Cloud Computing</h5>
+                <p class="card-text">Understand cloud platforms, deployment models, and DevOps tools.</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Duration:</strong> 10 weeks</li>
+                  <li><strong>Fee:</strong> ₹550</li>
+                </ul>
+                <a href="courses.html" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-soft py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2>Student Testimonials</h2>
+              <p class="text-muted">Real feedback from learners who boosted their careers.</p>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="card testimonial-card h-100 shadow-sm p-4">
+                <p class="mb-4">"The instructors were supportive and the curriculum helped me land a job in web development."</p>
+                <h6 class="mb-1">Aisha Khan</h6>
+                <small class="text-muted">Web Development Student</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card testimonial-card h-100 shadow-sm p-4">
+                <p class="mb-4">"Practical Python projects and mentorship made learning fast and enjoyable."</p>
+                <h6 class="mb-1">Rahul Patel</h6>
+                <small class="text-muted">Python Programming Student</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card testimonial-card h-100 shadow-sm p-4">
+                <p class="mb-4">"The course helped me build confidence in data science tools and real-world analytics."</p>
+                <h6 class="mb-1">Sanya Mehta</h6>
+                <small class="text-muted">Data Science Student</small>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+              <div class="card callout-card p-4 shadow-sm">
+                <h3 class="mb-3">Ready to start your learning journey?</h3>
+                <p class="mb-4 text-muted">Join thousands of learners who have completed their training and advanced their careers with FutureReady.</p>
+                <a href="register.html" class="btn btn-primary btn-lg">Register Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>123 Knowledge Lane,<br>City Center, USA</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Reach Us</h5>
+            <p>Phone: +1 800 123 4567<br>Email: info@futureready.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow</h5>
+            <div class="social-links">
+              <a href="#" class="text-light me-3">Facebook</a>
+              <a href="#" class="text-light me-3">LinkedIn</a>
+              <a href="#" class="text-light">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="aboutModalLabel">About FutureReady Institute</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>FutureReady Training Institute offers industry-aligned courses in development, data science, AI, and cloud computing. Our goal is to help learners build practical skills, earn certifications, and grow their careers.</p>
+            <ul>
+              <li>Experienced faculty</li>
+              <li>Hands-on project learning</li>
+              <li>Flexible online and classroom training</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
