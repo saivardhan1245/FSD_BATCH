@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
-  <rect width="900" height="600" fill="#6610f2" />
-  <rect x="40" y="40" width="820" height="520" rx="24" fill="#ffffff" opacity="0.14" />
-  <text x="50%" y="45%" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">AI &</text>
-  <text x="50%" y="58%" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48">Machine Learning</text>
-  <text x="50%" y="75%" text-anchor="middle" fill="#ffffff" opacity="0.85" font-family="Arial, Helvetica, sans-serif" font-size="24">Neural Networks • Models</text>
-</svg>
