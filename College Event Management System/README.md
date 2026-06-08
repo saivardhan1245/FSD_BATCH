@@ -14,18 +14,6 @@ This project is a responsive college event management website that allows studen
 - **FAQ** — Accordion-based frequently asked questions section.
 - **Contact** — Contact form, coordinator details, and social media links.
 
-## Screenshots
-
-> Replace these placeholders with actual screenshots after opening the site.
-
-- `screenshots/home-page.png`
-- `screenshots/events-page.png`
-- `screenshots/registration-page.png`
-- `screenshots/schedule-page.png`
-- `screenshots/gallery-page.png`
-- `screenshots/faq-page.png`
-- `screenshots/contact-page.png`
-
 ## Technologies Used
 
 - HTML5
@@ -41,8 +29,7 @@ This project is a responsive college event management website that allows studen
 - `schedule.html` — Event schedule table
 - `gallery.html` — Gallery page
 - `faq.html` — FAQ page
-- `contact.html` — Contact page
-- `css/style.css` — Shared custom styling
+- `contact.html` — Contact page- `css/style.css` — Shared custom styling
 
 ## Notes
 

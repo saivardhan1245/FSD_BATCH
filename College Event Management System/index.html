@@ -37,13 +37,14 @@
 
   <main class="container py-5">
     <section class="mb-5">
-      <div class="row align-items-center">
+      <div class="row align-items-center gx-5">
         <div class="col-lg-6">
+          <div class="badge bg-warning text-dark px-3 py-2 mb-3 rounded-pill fw-semibold">Campus Events Live</div>
           <h2 class="section-title">Event Highlights</h2>
-          <p>Join technical quizzes, hackathons, cultural fests, and more. Our platform keeps every student informed with event details, venues, and registration status.</p>
+          <p class="lead text-muted">Join technical quizzes, hackathons, cultural fests, and more. Our platform keeps every student informed with event details, venues, and registration status.</p>
           <div class="row gy-3">
             <div class="col-sm-6">
-              <div class="card shadow-sm border-0">
+              <div class="card feature-card shadow-sm border-0">
                 <div class="card-body">
                   <h5 class="card-title">Technical Quiz</h5>
                   <p class="card-text">Sharpen your skills with a campus-level technical quiz.</p>
@@ -51,7 +52,7 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card shadow-sm border-0">
+              <div class="card feature-card shadow-sm border-0">
                 <div class="card-body">
                   <h5 class="card-title">Cultural Fest</h5>
                   <p class="card-text">Experience the best of campus culture, music, and performances.</p>
@@ -59,10 +60,33 @@
               </div>
             </div>
           </div>
+          <div class="row row-cols-1 row-cols-md-3 g-3 mt-4">
+            <div class="col">
+              <div class="card feature-card border-0 shadow-sm p-4 text-center h-100">
+                <div class="fs-1 mb-3">🎓</div>
+                <h6 class="mb-2">Student Friendly</h6>
+                <p class="mb-0 text-muted">Designed for quick event discovery and registration.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card feature-card border-0 shadow-sm p-4 text-center h-100">
+                <div class="fs-1 mb-3">⏰</div>
+                <h6 class="mb-2">Clear Schedule</h6>
+                <p class="mb-0 text-muted">Easily browse event times, venues, and details.</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card feature-card border-0 shadow-sm p-4 text-center h-100">
+                <div class="fs-1 mb-3">🌟</div>
+                <h6 class="mb-2">Campus Experience</h6>
+                <p class="mb-0 text-muted">Connect with peers through exciting college events.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
           <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators mb-4">
               <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -103,96 +127,100 @@
       </div>
     </section>
 
-    <section class="mb-5">
+    <section class="mb-5 bg-white rounded-4 shadow-sm p-4">
       <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
           <h2 class="section-title">Explore Events</h2>
-          <p class="mb-0">Browse featured campus events and secure your spot today.</p>
+          <p class="mb-0 text-muted">Browse featured campus events and secure your spot today.</p>
         </div>
         <a href="events.html" class="btn btn-primary">See All Events</a>
       </div>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Technical Quiz">
             <div class="card-body">
               <h5 class="card-title">Technical Quiz</h5>
               <p class="card-text">Test your knowledge in the ultimate quiz challenge.</p>
-              <a href="registration.html" class="btn btn-outline-primary">Register</a>
+              <a href="registration.html" class="btn btn-primary">Register</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Hackathon">
             <div class="card-body">
               <h5 class="card-title">Hackathon</h5>
               <p class="card-text">Collaborate, code, and compete with peers.</p>
-              <a href="registration.html" class="btn btn-outline-primary">Register</a>
+              <a href="registration.html" class="btn btn-primary">Register</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Cultural Fest">
             <div class="card-body">
               <h5 class="card-title">Cultural Fest</h5>
               <p class="card-text">Celebrate art, music, and tradition with the campus community.</p>
-              <a href="registration.html" class="btn btn-outline-primary">Register</a>
+              <a href="registration.html" class="btn btn-primary">Register</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="row gx-4 gy-4 mb-5">
+    <section class="row gx-4 gy-4 mb-5 text-center">
       <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <div class="card-body">
-            <h4 class="card-title">Easy Registration</h4>
-            <p class="card-text">Fill the form and join any event in minutes.</p>
-          </div>
+        <div class="card feature-card border-0 shadow-sm p-4 h-100">
+          <div class="fs-1 mb-3">✅</div>
+          <h4 class="card-title">Easy Registration</h4>
+          <p class="card-text text-muted">Fill the form and join any event in minutes.</p>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <div class="card-body">
-            <h4 class="card-title">Full Schedule</h4>
-            <p class="card-text">Track event times and venues with a smart calendar layout.</p>
-          </div>
+        <div class="card feature-card border-0 shadow-sm p-4 h-100">
+          <div class="fs-1 mb-3">📅</div>
+          <h4 class="card-title">Clear Schedule</h4>
+          <p class="card-text text-muted">Track event times and venues with a smart calendar layout.</p>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <div class="card-body">
-            <h4 class="card-title">Live Updates</h4>
-            <p class="card-text">Stay informed with event alerts and announcements.</p>
-          </div>
+        <div class="card feature-card border-0 shadow-sm p-4 h-100">
+          <div class="fs-1 mb-3">🎉</div>
+          <h4 class="card-title">Live Updates</h4>
+          <p class="card-text text-muted">Stay informed with event alerts and announcements.</p>
         </div>
       </div>
     </section>
 
-    <section class="mb-5">
+    <section class="mb-5 bg-white rounded-4 shadow-sm p-4">
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="card shadow-sm border-0 h-100">
+          <div class="card shadow-sm border-0 h-100 rounded-4">
             <div class="card-body">
               <h5 class="card-title">Event Schedule</h5>
-              <p class="card-text">View the complete schedule for all campus events in one place.</p>
+              <p class="card-text text-muted">View the complete schedule for all campus events in one place.</p>
               <a href="schedule.html" class="btn btn-outline-secondary">See Schedule</a>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card shadow-sm border-0 h-100">
+          <div class="card shadow-sm border-0 h-100 rounded-4">
             <div class="card-body">
               <h5 class="card-title">FAQ</h5>
-              <p class="card-text">Get answers to common questions about registration and participation.</p>
+              <p class="card-text text-muted">Get answers to common questions about registration and participation.</p>
               <a href="faq.html" class="btn btn-outline-secondary">Read FAQ</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="text-center py-5 rounded-4 shadow-sm" style="background: rgba(87, 70, 214, .08);">
+      <h2 class="section-title">Ready to join the excitement?</h2>
+      <p class="text-muted mb-4">Reserve your spot now and stay ahead of upcoming competitions, exhibitions, and campus celebrations.</p>
+      <a href="registration.html" class="btn btn-primary btn-lg me-2">Register Today</a>
+      <a href="events.html" class="btn btn-outline-secondary btn-lg">Browse Events</a>
     </section>
   </main>
 
