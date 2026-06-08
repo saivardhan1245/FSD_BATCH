@@ -1,0 +1,43 @@
+/* Dark theme styling for Personal Portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{--accent:#0d6efd;--bg:#0b0d12;--card:#0f1720;--muted:#b0b8c8;--text:#f0f2f7}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.profile-photo{width:180px;height:180px;object-fit:cover;border:6px solid rgba(255,255,255,0.04)}
+header{background:linear-gradient(90deg,rgba(13,110,253,0.06),transparent);color:var(--text)}
+header h1{font-family:'Poppins',sans-serif;font-weight:700;font-size:3.5rem;letter-spacing:-1px;color:var(--text)}
+header h4{color:var(--muted);font-size:1.35rem;font-weight:500}
+header .lead{color:var(--muted);font-size:1.15rem}
+.skill-card h5{font-weight:600;color:var(--text)}
+.card{background:var(--card);border:1px solid rgba(255,255,255,0.03);color:var(--text)}
+.card h5, .card h6{color:var(--text)}
+.card-img-top{height:140px;object-fit:cover}
+footer{font-size:0.9rem;background:transparent;color:var(--text)}
+.lead{color:var(--muted)}
+.text-muted{color:var(--muted) !important}
+section h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:2.5rem;color:var(--text);margin-bottom:2rem}
+section h5, section h6{color:var(--text)}
+ul, li{color:var(--text)}
+.carousel-caption{color:var(--text)}
+.carousel-caption h5{font-family:'Poppins',sans-serif;font-weight:700;font-size:2rem}
+.modal-content{background:var(--card);color:var(--text)}
+.modal-header{border-bottom:1px solid rgba(255,255,255,0.1)}
+.modal-title{color:var(--text);font-family:'Poppins',sans-serif;font-weight:700}
+.form-control{background:rgba(255,255,255,0.05);color:var(--text);border:1px solid rgba(255,255,255,0.1)}
+.form-control:focus{background:rgba(255,255,255,0.08);border-color:var(--accent);color:var(--text)}
+.form-label{color:var(--text);font-weight:500}
+button{font-weight:600;font-family:'Inter',sans-serif}
+.table-dark{color:var(--text)}
+.accordion-button{background:var(--card);color:var(--text);border:1px solid rgba(255,255,255,0.1)}
+.accordion-button:not(.collapsed){background:rgba(13,110,253,0.15);color:var(--accent)}
+
+/* Alerts */
+.alert-custom{background:linear-gradient(90deg, rgba(13,110,253,0.12), rgba(255,255,255,0.02));color:#dcefff;border:1px solid rgba(13,110,253,0.15)}
+
+/* Cursor sprinkle effect */
+.spark{position:fixed;pointer-events:none;width:10px;height:10px;border-radius:50%;opacity:0.95;transform:translate(-50%,-50%) scale(1);transition:transform 700ms ease-out,opacity 700ms ease-out}
+
+/* Dark carousel overlay */
+.carousel-caption{background:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45));padding:1rem;border-radius:8px}
+
+/* Responsive tweaks */
+@media (max-width:576px){.profile-photo{width:120px;height:120px}} 
