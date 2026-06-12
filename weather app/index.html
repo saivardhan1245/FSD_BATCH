@@ -4,19 +4,13 @@
     <title>Weather App</title>
     <style>
         body{
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             text-align:center;
             margin-top:100px;
         }
 
-        input{
+        input,button{
             padding:10px;
-            width:200px;
-        }
-
-        button{
-            padding:10px 15px;
-            cursor:pointer;
         }
 
         #result{
@@ -27,48 +21,54 @@
 </head>
 <body>
 
-    <h1>Weather App</h1>
+<h2>Weather App</h2>
 
-    <input type="text" id="city" placeholder="Enter city name">
-    <button onclick="getWeather()">Search</button>
+<input type="text" id="city" placeholder="Enter City">
+<button onclick="getWeather()">Search</button>
 
-    <div id="result"></div>
+<div id="result"></div>
 
-    <script>
-        async function getWeather() {
+<script>
 
-            const city = document.getElementById("city").value;
-            const apiKey = "YOUR_API_KEY";
+async function getWeather(){
 
-            const url =
-            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let city = document.getElementById("city").value;
 
-            try {
+    try{
 
-                const response = await fetch(url);
-                const data = await response.json();
+        let geo = await fetch(
+        `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`);
 
-                if(data.cod != 200){
-                    document.getElementById("result").innerHTML =
-                    "City not found";
-                    return;
-                }
+        let geoData = await geo.json();
 
-                document.getElementById("result").innerHTML =
-                `
-                <h3>${data.name}</h3>
-                <p>Temperature: ${data.main.temp} °C</p>
-                <p>Weather: ${data.weather[0].main}</p>
-                <p>Humidity: ${data.main.humidity}%</p>
-                <p>Wind Speed: ${data.wind.speed} m/s</p>
-                `;
-
-            } catch(error) {
-                document.getElementById("result").innerHTML =
-                "Error fetching weather data";
-            }
+        if(!geoData.results){
+            document.getElementById("result").innerHTML="City Not Found";
+            return;
         }
-    </script>
+
+        let lat = geoData.results[0].latitude;
+        let lon = geoData.results[0].longitude;
+
+        let weather = await fetch(
+        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m`);
+
+        let weatherData = await weather.json();
+
+        document.getElementById("result").innerHTML=
+        `
+        <h3>${geoData.results[0].name}</h3>
+        <p>Temperature : ${weatherData.current.temperature_2m} °C</p>
+        <p>Humidity : ${weatherData.current.relative_humidity_2m}%</p>
+        <p>Wind Speed : ${weatherData.current.wind_speed_10m} km/h</p>
+        `;
+
+    }
+    catch(e){
+        document.getElementById("result").innerHTML="Something went wrong";
+    }
+}
+
+</script>
 
 </body>
 </html>
