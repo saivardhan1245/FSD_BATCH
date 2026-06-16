@@ -28,7 +28,10 @@ app.patch("/users/1", (req, res) => {
     user
   });
 });
-
+app.get("/users/1", (req, res) => {
+  res.json(user);
+});
+console.log("RUNNING PUTPATCH.JS");
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
